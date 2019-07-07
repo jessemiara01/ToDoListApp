@@ -13,6 +13,7 @@ class CategoryTableViewController: UITableViewController {
     
     let realm = try! Realm()
     
+    
     var categoryList : Results<Categories>?
 
     override func viewDidLoad() {
@@ -81,10 +82,21 @@ class CategoryTableViewController: UITableViewController {
     }
     
 
-
-
-
     // MARK: - Navigation
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toItems", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ItemsTableViewController
+
+        if let newIndexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedCategories = categoryList?[newIndexPath.row]
+        }
+        
+        
+        
+    }
 
 
 }

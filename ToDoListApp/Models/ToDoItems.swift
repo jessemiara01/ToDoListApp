@@ -12,6 +12,5 @@ import RealmSwift
 class ToDoItems: Object{
     @objc dynamic var itemsToDo : String = ""
     @objc dynamic var itemIsChecked : Bool = false
-    
     var parentCategory = LinkingObjects(fromType: Categories.self, property: "itemsForCategory")
 }

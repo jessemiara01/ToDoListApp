@@ -15,6 +15,7 @@
 		8383593422D1636C005FCC1C /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383593322D1636C005FCC1C /* CategoryTableViewController.swift */; };
 		8383593922D164F4005FCC1C /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383593822D164F4005FCC1C /* Categories.swift */; };
 		8383593B22D164FD005FCC1C /* ToDoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383593A22D164FD005FCC1C /* ToDoItems.swift */; };
+		8383593D22D16F58005FCC1C /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383593C22D16F58005FCC1C /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8383593322D1636C005FCC1C /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		8383593822D164F4005FCC1C /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		8383593A22D164FD005FCC1C /* ToDoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItems.swift; sourceTree = "<group>"; };
+		8383593C22D16F58005FCC1C /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		C4107FC8ED6E82154702A6F7 /* Pods-ToDoListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListApp.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C95DB17A8B0D4BCBC4572068 /* Pods_ToDoListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67161B2A73AB073AB7194CE /* Pods-ToDoListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				8383593322D1636C005FCC1C /* CategoryTableViewController.swift */,
 				8383592122D144F2005FCC1C /* AppDelegate.swift */,
+				8383593C22D16F58005FCC1C /* ItemsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				8383592222D144F2005FCC1C /* AppDelegate.swift in Sources */,
 				8383593422D1636C005FCC1C /* CategoryTableViewController.swift in Sources */,
+				8383593D22D16F58005FCC1C /* ItemsTableViewController.swift in Sources */,
 				8383593B22D164FD005FCC1C /* ToDoItems.swift in Sources */,
 				8383593922D164F4005FCC1C /* Categories.swift in Sources */,
 			);
