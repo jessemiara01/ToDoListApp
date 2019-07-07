@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KG1-Ta-XLD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="KG1-Ta-XLD">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KG1-Ta-XLD" id="94B-dg-qMn">
@@ -32,7 +32,13 @@
                             <outlet property="delegate" destination="5Vm-GS-Ngk" id="O3v-Ex-SCO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Categories" id="CVe-uS-M9h"/>
+                    <navigationItem key="navigationItem" title="Categories" id="CVe-uS-M9h">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yK5-Yu-9Qw">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="5Vm-GS-Ngk" id="Zny-5H-YG9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="b8N-2X-2GX" kind="show" id="gfl-QB-3oS"/>
                     </connections>
