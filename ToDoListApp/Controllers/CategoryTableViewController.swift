@@ -17,28 +17,30 @@ class CategoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(realm.configuration.fileURL)
-
-    }
+        loadDataIntoList()
+        }
     // MARK: - Data handling methods
     
     func saveToList(category : Categories){
         do{
             try realm.write {
                 realm.add(category)
-                print("\(category.categoryName) Written to database")
             }
         } catch{
             print("Could not write to database \(error)")
         }
+    }
+    
+
+    func loadDataIntoList(){
+        categoryList = realm.objects(Categories.self)
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return categoryList?.count ?? 1
     }
 
